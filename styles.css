@@ -6,6 +6,8 @@ body {
     padding: 0;
     background-color: #f7f9fc;
     color: #333;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Space for footer */
 }
 
 /* Header */
@@ -144,26 +146,33 @@ p, li {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Section */
+/* Social Media Section */
+.social-media {
+    margin-top: 20px;
+}
+
 .social-media a {
     margin-right: 15px;
     text-decoration: none;
     color: #0062cc;
     font-size: 1.2em;
-    transition: color 0.3s;
+    display: inline-block;
+    padding: 5px;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-media a:hover {
     color: #0056b3;
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #00509e; /* Lightened the blue color */
+    background: #00509e;
     color: #fff;
-    position: fixed;
+    position: relative; /* Changed from fixed */
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
